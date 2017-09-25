@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+
+@font-face {
+	font-family: SourceSansProLight;
+	src: url("font/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+	font-family: MavenPro;
+	src: url("font/MavenPro-Medium.ttf");
+}
+
+@font-face {
+	font-family: PTSansNarrow;
+	src: url("font/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+@keyframes left-fade-in-transition {
+	from { 
+		left: 0;
+		opacity: 0;
+	 }
+	to { 
+		left: 25%;
+		opacity: 1;
+	 }
+}
+
+body {
+	margin: 0;
+}
+
+#navbar {
+	background-color: #e74c3c;
+}
+
+#navbar-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#navbar-items .navbar-link {
+	float: left;
+	position: relative;
+	left: 40px;
+}
+
+#navbar-items .navbar-link a {
+	color: #ffffff;
+	font-size: 24px;
+	font-family: SourceSansProLight;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: block;
+	
+	transition: background-color 300ms linear;
+	-webkit-transition: background-color 300ms linear;
+	-moz-transition: background-color 300ms linear;
+	-o-transition: background-color 300ms linear;
+	-ms-transition: background-color 300ms linear;
+}
+
+
+
+#navbar-items .navbar-link a:hover {
+	background-color: #ef412f;
+	cursor: pointer;
+}
+
+#navbar-items #navbar-small-icon {
+	float: left;
+	left: 18px;
+	position: relative;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#navbar-items #navbar-title {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	float: left;
+	color: #ffffff;
+	position: relative;
+	left: 10px;
+	font-size: 24px;
+	font-family: MavenPro;
+}
+
+#main-content #main-header {
+	padding-top: 20px;
+	font-size: 48px;
+	position: relative;
+	font-family: SourceSansProLight;
+	color: #2c3e50;
+	left: 25%;
+	animation-name: left-fade-in-transition;
+	animation-duration: 2s;
+}
+
+#main-animation-intro-wrapper {
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
