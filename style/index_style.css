@@ -21,7 +21,7 @@
 		opacity: 0;
 	 }
 	to { 
-		left: 25%;
+		left: 28%;
 		opacity: 1;
 	 }
 }
@@ -97,7 +97,7 @@ body {
 	position: relative;
 	font-family: SourceSansProLight;
 	color: #2c3e50;
-	left: 25%;
+	left: 28%;
 	animation-name: left-fade-in-transition;
 	animation-duration: 2s;
 }
