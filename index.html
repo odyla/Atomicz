@@ -5,10 +5,58 @@
 	<title>Atomicz</title>
 	<link rel="stylesheet" href="style/index_style.css" type="text/css" />
 	<link rel="shortcut icon" type="image/png" href="style/image/atomicz_icon_dark.png"/>
-	<script src="javascript/home_animation.js"></script>
+	<script src="javascript/lib/consoleCNV.js"></script>
 	<script type="text/javascript">
 		window.onload = function() {
-			startIntroAnimation();
+			var consoleCanvas = consoleCNV.create(document.getElementById("main-animation"), {
+				consoleBackgroundColor: "#000000",
+				consoleBorderColor: "#2c3e50",
+				typeBarColor: "#2c3e50",
+				typeBarWidth: 7,
+				typeBarHeight: 28,
+				consoleBorder: 10,
+				font: "16pt Lucida Console",
+				charColor: "#ffffff",
+				charWidth: 20,
+				charHeight: 20
+			});
+			
+			consoleCNV.start(consoleCanvas);
+			
+			setTimeout(function() {
+				/*---*/		consoleCNV.doTypingSequence(consoleCanvas, "Bem ", false, function() {
+								setTimeout(function() {
+						/*---*/		consoleCNV.doTypingSequence(consoleCanvas, "vindo ", false, function() {
+										setTimeout(function() {
+								/*---*/		consoleCNV.doTypingSequence(consoleCanvas, "ao ", false, function() { 
+												setTimeout(function() {
+										/*---*/		consoleCNV.doTypingSequence(consoleCanvas, "CLIMB!", true, function() { 
+														setTimeout(function() {
+												/*---*/		consoleCNV.doInstantTyping(consoleCanvas, "", true, function() { 
+																	setTimeout(function() {
+																		consoleCNV.doTypingSequence(consoleCanvas, "about", false, function() {
+																				setTimeout(function() {
+																					consoleCNV.doInstantTyping(consoleCanvas, "", true, function() {
+																						consoleCNV.doInstantTyping(consoleCanvas, ">> CLIMB v1.0 Atomicz 2017", true, function() {
+																						});
+																					});
+																			}, 2000);
+																		});
+																	}, 1700)
+																});
+														}, 900);
+													});
+												}, 600);
+											}, 500);
+										});
+									}, 500);
+								});
+							}, 700);
+						}, 500);
+						
+						
+					
+					
 		}
 	</script>
 	</head>
@@ -34,7 +82,7 @@
 				<span>FAÇA MAIS COM CLIMB, MUITO MAIS.</span>
 			</div>
 			<div id="main-animation-intro-wrapper">
-				<canvas id="main-animation-intro" width="700" height="400">
+				<canvas id="main-animation" width="700" height="400">
 					Sorry, your browser does not support Canvas =/
 				</canvas>
 			</div>
