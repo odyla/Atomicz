@@ -21,13 +21,14 @@
 		opacity: 0;
 	 }
 	to { 
-		left: 28%;
+		left: 24%;
 		opacity: 1;
 	 }
 }
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 #navbar {
@@ -44,7 +45,7 @@ body {
 #navbar-items .navbar-link {
 	float: left;
 	position: relative;
-	left: 40px;
+	left: 4vw;
 }
 
 #navbar-items .navbar-link a {
@@ -93,17 +94,23 @@ body {
 
 #main-content #main-header {
 	padding-top: 20px;
-	font-size: 48px;
+	font-size: 4vw;
 	position: relative;
 	font-family: SourceSansProLight;
 	color: #2c3e50;
-	left: 28%;
+	left: 24vw;
 	animation-name: left-fade-in-transition;
 	animation-duration: 2s;
+	display: inline-block;
 }
 
-#main-animation-intro-wrapper {
+#main-animation-wrapper {
 	text-align: center;
 	position: relative;
 	top: 40px;
+}
+
+#main-animation {
+	 width: 700px;
+	 height: 500px;
 }
